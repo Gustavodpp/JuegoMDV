@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://d1abu0ou7lffi"]
+
+[ext_resource type="Texture2D" uid="uid://2vvfpxn656nc" path="res://icon.svg" id="1_0e48y"]
+[ext_resource type="Script" uid="uid://p8txvitf2hs3" path="res://sprite_2d.gd" id="2_epypp"]
+
+[node name="Node2D" type="Node2D" unique_id=2058363776]
+script = ExtResource("2_epypp")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=558462265]
+position = Vector2(89, 94)
+texture = ExtResource("1_0e48y")
+
+[node name="Button" type="Button" parent="." unique_id=1629441119]
+offset_left = 206.0
+offset_top = 38.0
+offset_right = 336.0
+offset_bottom = 109.0
+text = "Toogle motion
+"
+
+[node name="Timer" type="Timer" parent="." unique_id=1886420955]
+wait_time = 0.1
+autostart = true
+
+[connection signal="pressed" from="Button" to="Sprite2D" method="_on_button_pressed"]

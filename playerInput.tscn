@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://dqectoavhbndy"]
+
+[ext_resource type="Texture2D" uid="uid://d14smti1mlx7y" path="res://assets/0014.png" id="1_mc5yf"]
+[ext_resource type="Script" uid="uid://bny4olp430xde" path="res://playerInput.gd" id="2_x8bpi"]
+
+[node name="Node2D" type="Node2D" unique_id=2072101699]
+
+[node name="0014" type="Sprite2D" parent="." unique_id=469636454]
+scale = Vector2(0.1420898, 0.14208975)
+texture = ExtResource("1_mc5yf")
+script = ExtResource("2_x8bpi")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=286076244]
+scale = Vector2(0.1420898, 0.14208977)
